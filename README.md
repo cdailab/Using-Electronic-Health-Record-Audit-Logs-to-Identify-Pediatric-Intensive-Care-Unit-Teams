@@ -7,7 +7,7 @@ Corresponding Author: Liem M. Nguyen, liemn@stanford.edu
 
 ---
 
-This repository contains code for identifying pediatric ICU teams (nurse, frontline provider, attending) from EHR audit logs. Two algorithms—**clinically-informed heuristic** and **LCS** (Longitudinal Contribution Score)—assign roles per patient-day using activity features and note-signing patterns. Attending identification is frontline-dependent (linked by note-modify actions via audit logs).
+This repository contains code for identifying pediatric ICU teams (nurse, frontline provider, attending) from EHR audit logs. Two algorithms 1) clinically-informed heuristics and 2) LCS (Longitudinal Contribution Score) assign roles per patient-day using activity features and note-signing patterns. Attending identification is frontline-dependent (linked by note-modify actions via audit logs).
 
 ## Pipeline Overview
 
@@ -18,10 +18,10 @@ This repository contains code for identifying pediatric ICU teams (nurse, frontl
 
 | Path | Description |
 |------|-------------|
-| `sql/run_development.sql` | Development phase: PICU, first-round REDCap |
-| `sql/run_validation.sql` | Validation phase: PICU/NICU/CVICU, second-round REDCap |
+| `sql/run_development.sql` | Development phase: PICU |
+| `sql/run_validation.sql` | Validation phase: PICU/NICU/CVICU |
 | `python/config.py` | BigQuery config, provider types, algorithm constants |
-| `python/algorithms.py` | Heuristic and LCS team identification logic |
+| `python/algorithms.py` | Clinically-informed heuristics and LCS team identification logic |
 | `python/data_loader.py` | BigQuery load and preprocessing |
 | `python/evaluation.py` | Gold-standard comparison and accuracy metrics |
 | `python/bootstrap.py` | Patient-day bootstrap |
