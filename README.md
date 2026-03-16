@@ -36,3 +36,5 @@ This repository contains code for identifying pediatric ICU teams (nurse, frontl
 3. **BigQuery:** Run SQL scripts before Python. Required tables: REDCap team observation ground truth, reference tables (attending, frontline, nurse) to match redcap names to, Clarity SER for user IDs and role information, Clarity access log and associated detailed tables. 
 
 Results are written to `results/` with timestamps. Logs go to `logs/`.
+
+AI-Use Disclosure: Claude Sonnet 4.5/4.6 were used throughout the repository for code documentation and organization. No models had any access to PHI. 
