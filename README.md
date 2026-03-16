@@ -1,13 +1,13 @@
 # Using Electronic Health Record Audit Logs to Identify Pediatric Intensive Care Unit Teams
 
-**Authors:** Liem M. Nguyen, BS; Stefanie S. Sebok-Syer, PhD; Dane Jacobson, MD; Karley Mariano, MSN, CPNP-AC; John Grunyk, MD; Shelby Burk, MS; Yasaman Nourkhalaj, BS; Kimberley Kirk, BA; Jochen Profit, MD, MPH; Christian Rose, MD; A Jay Holmgren, PhD; Thomas Kannampallil, PhD; Daniel Tawfik, MD, MS  
+**Authors:** Liem M. Nguyen, BS¹; Stefanie S. Sebok-Syer¹, PhD; Dane Jacobson, MD¹; Karley Mariano, MSN, CPNP-AC¹; John Grunyk, MD¹; Shelby Burk, MS¹; Yasaman Nourkhalaj, BS¹; Kimberley Kirk, BA¹; Jochen Profit, MD¹, MPH; Christian Rose, MD¹; A Jay Holmgren, PhD²; Thomas Kannampallil, PhD³; Daniel Tawfik, MD, MS¹ 
 Stanford University School of Medicine¹ · UCSF School of Medicine² · Washington University School of Medicine³
 
 Corresponding Author: Liem M. Nguyen, liemn@stanford.edu
 
 ---
 
-This repository contains code for identifying PICU teams (nurse, frontline provider, attending) from EHR audit logs. Two algorithms—**clinically-informed heuristic** and **LCS** (Longitudinal Contribution Score)—assign roles per patient-day using activity features and note-signing patterns. Attending identification is frontline-dependent (linked by note-modify actions via audit logs).
+This repository contains code for identifying pediatric ICU teams (nurse, frontline provider, attending) from EHR audit logs. Two algorithms—**clinically-informed heuristic** and **LCS** (Longitudinal Contribution Score)—assign roles per patient-day using activity features and note-signing patterns. Attending identification is frontline-dependent (linked by note-modify actions via audit logs).
 
 ## Pipeline Overview
 
