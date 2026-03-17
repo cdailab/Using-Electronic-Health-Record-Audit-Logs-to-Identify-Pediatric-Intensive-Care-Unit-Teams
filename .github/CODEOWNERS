@@ -1,0 +1,5 @@
+# Collaborator must review all code changes
+@liemmnguyen
+
+# Only admins can change the CODEOWNERS file itself
+/.github/CODEOWNERS @TawfikLabStanford @KimKirk
